@@ -1,0 +1,132 @@
+body {
+    color: #03045e;
+    text-align: center;
+    font-family: 'Emilys Candy', sans-serif;
+}
+
+button {
+    background-color: #f0e68c;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Emilys Candy', sans-serif;
+    border: none;
+    padding: 80px 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1.5em;
+    text-shadow: 0 0 2px #ff006e;
+}
+
+button:hover {
+  cursor: pointer;
+  filter:blur(0.75px);
+}
+
+#cat-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.img-border {
+  display: inline-block;
+  padding: 4px; /* border thickness */
+  background: linear-gradient(270deg, 
+    #ffd6e0, /* soft pink */
+    #f9e0ff, /* lavender */
+    #d6f0ff, /* baby blue */
+    #fff5d6, /* pastel yellow */
+    #ffd6e0  /* loop back to pink */
+  );
+  background-size: 500% 500%;
+  animation: pastelMove 8s ease infinite;
+  border-radius: 50%; /* rounded cute corners */
+}
+
+.img-border img {
+  display: block;
+  border-radius: 50%; /* matches padding shape */
+}
+
+@keyframes pastelMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('images\\nathalie-jolie-nKzeG3iE_Qg-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+  z-index: -1;
+}
+
+#btn-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 buttons per row */
+  gap: 8px; /* space between buttons */
+  max-width: 400px; /* optional: keeps it compact */
+  margin: auto; /* center horizontally */
+  justify-content: center;
+  row-gap: 0; /* space between rows */
+}
+
+#btn1 {
+    background-image: url('images\\annie-spratt-EACvtuV2k2E-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#btn2 {
+    background-image: url('images\\andy-hay-ZN-TT10kf4o-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#btn3 {
+    background-image: url('images\\jazmin-quaynor-FoeIOgztCXo-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#btn4 {
+    background-image: url('images\\alyssa-strohmann-TS--uNw-JqE-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#btn5 {
+    background-image: url('images\\martin-de-arriba-uf_IDewI6iQ-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#btn6 {
+    background-image: url('images\\irene-kredenets-dwKiHoqqxk8-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#btn7 {
+    background-image: url('images\\alexandra-fuller-4RNLzJzEMMs-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#btn8 {
+    background-image: url('images\\carlos-muza-hpjSkU2UYSU-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#cat-gif {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: opacity 0.5s ease; /* smooth fade */
+    opacity: 1;
+}
+
+#cat-gif.fade {
+    opacity: 0;
+}
