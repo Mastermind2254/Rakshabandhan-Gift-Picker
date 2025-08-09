@@ -132,17 +132,28 @@ button:hover {
 }
 
 @media (max-width: 600px) {
+  /* 2 columns, 4 rows for buttons */
+  #btn-container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    gap: 8px;
+    padding: 10px;
+  }
+
   button {
     font-size: 1rem;
-    padding: 20px 30px;
+    padding: 30px 20px;
   }
-  
-  #btn-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 buttons per row on mobile */
-    max-width: 100%;
-    gap: 5px;
+
+  /* Make background fill entire phone screen */
+  .bg {
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
   }
-  
+
+  /* Slightly smaller cat image for mobile */
   #cat-image {
     width: 150px;
     height: 150px;
