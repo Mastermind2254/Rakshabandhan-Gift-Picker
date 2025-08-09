@@ -130,3 +130,21 @@ button:hover {
 #cat-gif.fade {
     opacity: 0;
 }
+
+@media (max-width: 600px) {
+  button {
+    font-size: 1rem;
+    padding: 20px 30px;
+  }
+  
+  #btn-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 buttons per row on mobile */
+    max-width: 100%;
+    gap: 5px;
+  }
+  
+  #cat-image {
+    width: 150px;
+    height: 150px;
+  }
+}
